@@ -1,0 +1,64 @@
+#########################################################################################################################
+
+#### cpa alias
+alias te='emacs -nw'
+alias sscp="scp -oProxyJump=ifc"
+alias sss="shutdown +90"
+alias sss30="shutdown +30"
+alias sss120="shutdown +120"
+alias sss15="shutdown +15"
+alias ccc="shutdown -c"
+alias xport="xclip -selection clipboard"
+alias mder="xmodmap -e 'pointer = 3 2 1'"
+alias mizq="xmodmap -e 'pointer = 1 2 3'"
+alias c="bat"
+alias ls="exa -hlg --icons --git"
+alias l="exa  --icons "
+alias lss="/usr/bin/ls --color"
+alias fcopyname="/usr/bin/ls -1 -a | fzf | xport"
+alias ubmiproxy="ssh ifc -D4000"
+alias fullgit='/opt/git_pull_add_commit_push.sh'
+alias eaw="te /home/cpa/.config/awesome/rc.lua"
+alias emz='te /home/cpa/.zshrc '
+alias sz='source /home/cpa/.zshrc '
+alias cz='batcat  /home/cpa/.zshrc'
+alias c3t="ssh c3 vcgencmd measure_temp"
+alias c4t="ssh c4 vcgencmd measure_temp"
+alias rgb="ssh c4 /home/cpa/c4_rgb_control.py"
+alias j="jump"
+alias fs="/usr/bin/ls | fzf"
+alias ftree="tree -fi | fzf"
+alias cmatrix="cmatrix -bsf"
+alias latam="setxkbmap latam"
+alias español="setxkbmap es"
+alias scid="/home/cpa/scid_linux/scid/scid"
+
+#### cpa exports
+export EDITOR=/usr/bin/emacs
+
+#### cpa paths
+PATH=$PATH:/home/cpa/.emacs.d/bin/
+
+#### cpa functions
+function lsr () {
+    /usr/bin/ls -R "$@" | awk '   /:$/&&f{s=$0;f=0}   /:$/&&!f{sub(/:$/,"");s=$0;f=1;next}   NF&&f{ print s"/"$0 }'
+}
+
+# Ranger cd cuando sale con "|"
+function n {
+    local IFS=$'\t\n'
+    local tempfile="$(mktemp -t tmp.XXXXXX)"
+    local ranger_cmd=(
+        command
+        ranger
+        --cmd="map | chain shell echo %d > "$tempfile"; quitall"
+    )
+
+    ${ranger_cmd[@]} "$@"
+    if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]]; then
+        cd -- "$(cat "$tempfile")" || return
+    fi
+    command rm -f -- "$tempfile" 2>/dev/null
+}
+
+#########################################################################################################################

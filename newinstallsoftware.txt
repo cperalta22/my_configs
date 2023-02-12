@@ -1,0 +1,60 @@
+#from pacman  
+emacs
+tldr
+bat
+exa
+zsh
+terminology
+sshfs
+guake
+btop
+flatpak
+cmatrix
+neofetch
+aspell-en
+aspell-es
+qutebrowser
+pandoc
+feh
+unzip
+zathura
+lolcat
+figlet
+cowsay
+hwinfo
+screenfetch
+zathura-djvui
+zathura-pdf-mupdf  
+zathura-cb 
+zathura-ps
+
+# from ?
+scid # sourceforge
+mu-editor        # appimage from website
+
+# from conda
+mamba
+
+# from flatpak
+chrome
+thunderbird
+OBS studio
+inkscape
+freeCAD
+fritzing
+thonny
+coreshot
+
+# from repo 
+doom emacs
+ohmyzsh
+miniconda
+
+# from aur (yay)
+albert
+gh
+pacseek
+scid
+stockfish
+lc0
+komodo-free
