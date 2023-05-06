@@ -27,6 +27,7 @@ zathura-djvui
 zathura-pdf-mupdf  
 zathura-cb 
 zathura-ps
+lazygit
 
 # from ?
 scid # sourceforge
