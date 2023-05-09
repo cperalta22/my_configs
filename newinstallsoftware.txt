@@ -29,10 +29,6 @@ zathura-cb
 zathura-ps
 lazygit
 
-# from ?
-scid # sourceforge
-mu-editor        # appimage from website
-
 # from conda
 mamba
 
@@ -48,8 +44,9 @@ coreshot
 
 # from repo 
 doom emacs
+spacevim
 ohmyzsh
-miniconda
+miniconda / miniforge
 
 # from aur (yay)
 albert
@@ -59,3 +56,4 @@ scid
 stockfish
 lc0
 komodo-free
+shell-color-scripts
