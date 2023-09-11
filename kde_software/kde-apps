@@ -1,0 +1,370 @@
+extra/akonadi-calendar-tools 23.08.0-1 (kde-applications kde-pim) [instalado]
+    CLI tools to manage akonadi calendars
+extra/akonadi-import-wizard 23.08.0-1 (kde-applications kde-pim) [instalado]
+    Import data from other mail clients to KMail
+extra/akonadiconsole 23.08.0-1 (kde-applications kde-pim) [instalado]
+    Akonadi management and debugging console
+extra/akregator 23.08.0-1 (kde-applications kde-pim) [instalado]
+    A Feed Reader by KDE
+extra/alligator 23.08.0-1 (kde-applications kde-network) [instalado]
+    Kirigami-based RSS reader
+extra/angelfish 23.08.0-1 (kde-applications kde-network) [instalado]
+    Web browser for Plasma Mobile
+extra/arianna 23.08.0-1 (kde-applications kde-graphics) [instalado]
+    EPub Reader for mobile devices
+extra/ark 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Archiving Tool
+extra/artikulate 23.08.0-1 (kde-applications kde-education) [instalado]
+    Improve your pronunciation by listening to native speakers
+extra/audiocd-kio 23.08.0-1 (kde-applications kde-multimedia) [instalado]
+    Kioslave for accessing audio CDs
+extra/audiotube 23.08.0-1 (kde-applications kde-multimedia) [instalado]
+    Client for YouTube Music
+extra/blinken 23.08.0-1 (kde-applications kde-education) [instalado]
+    Memory Enhancement Game
+extra/bomber 23.08.0-1 (kde-applications kde-games) [instalado]
+    A single player arcade game
+extra/bovo 23.08.0-1 (kde-applications kde-games) [instalado]
+    A Gomoku like game for two players
+extra/cantor 23.08.0-1 (kde-applications kde-education) [instalado]
+    KDE Frontend to Mathematical Software
+extra/cervisia 23.08.0-1 (kde-applications kdesdk) [instalado]
+    CVS Frontend
+extra/colord-kde 23.08.0-1 (kde-applications kde-graphics) [instalado]
+    Interfaces and session daemon to colord for KDE
+extra/dolphin 23.08.0-1 (kde-applications kde-system) [instalado]
+    KDE File Manager
+extra/dolphin-plugins 23.08.0-1 (kde-applications kdesdk) [instalado]
+    Extra Dolphin plugins
+extra/dragon 23.08.0-1 (kde-applications kde-multimedia) [instalado]
+    A multimedia player where the focus is on simplicity, instead of features
+extra/elisa 23.08.0-1 (kde-applications kde-multimedia) [instalado]
+    A simple music player aiming to provide a nice experience for its users
+extra/falkon 23.08.0-1 (kde-applications kde-network) [instalado]
+    Cross-platform QtWebEngine browser
+extra/ffmpegthumbs 23.08.0-1 (kde-applications kde-multimedia) [instalado]
+    FFmpeg-based thumbnail creator for video files
+extra/filelight 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    View disk usage information
+extra/ghostwriter 23.08.0-1 (kde-applications kde-office) [instalado]
+    Aesthetic, distraction-free Markdown editor
+extra/granatier 23.08.0-1 (kde-applications kde-games) [instalado]
+    A clone of the classic Bomberman game
+extra/grantlee-editor 23.08.0-1 (kde-applications kde-pim) [instalado]
+    Editor for Grantlee themes
+extra/gwenview 23.08.0-1 (kde-applications kde-graphics) [instalado]
+    A fast and easy to use image viewer
+extra/itinerary 23.08.0-1 (kde-applications kde-pim) [instalado]
+    Itinerary and boarding pass management application
+extra/juk 23.08.0-1 (kde-applications kde-multimedia) [instalado]
+    A jukebox, tagger and music collection manager
+extra/k3b 1:23.08.0-1 (kde-applications kde-multimedia) [instalado]
+    Feature-rich and easy to handle CD burning application
+extra/kaddressbook 23.08.0-1 (kde-applications kde-pim) [instalado]
+    KDE contact manager
+extra/kajongg 23.08.0-1 (kde-applications kde-games) [instalado]
+    The ancient Chinese board game for 4 players
+extra/kalarm 23.08.0-1 (kde-applications kde-pim) [instalado]
+    Personal alarm scheduler
+extra/kalgebra 23.08.0-1 (kde-applications kde-education) [instalado]
+    Graph Calculator
+extra/kalk 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    A powerful cross-platform calculator application built with the Kirigami framework
+extra/kalzium 23.08.0-1 (kde-applications kde-education) [instalado]
+    Periodic Table of Elements
+extra/kamera 23.08.0-1 (kde-applications kde-graphics) [instalado]
+    KDE integration for gphoto2 cameras
+extra/kamoso 23.08.0-1 (kde-applications kde-multimedia) [instalado]
+    A webcam recorder from KDE community
+extra/kanagram 23.08.0-1 (kde-applications kde-education) [instalado]
+    Letter Order Game
+extra/kapman 23.08.0-1 (kde-applications kde-games) [instalado]
+    A clone of the well known game Pac-Man
+extra/kapptemplate 23.08.0-1 (kde-applications kdesdk) [instalado]
+    KDE Template Generator
+extra/kasts 23.08.0-1 (kde-applications kde-multimedia) [instalado]
+    Kirigami-based podcast player
+extra/kate 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Advanced text editor
+extra/katomic 23.08.0-1 (kde-applications kde-games) [instalado]
+    A fun and educational game built around molecular geometry
+extra/kbackup 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    A program that lets you back up any directories or files
+extra/kblackbox 23.08.0-1 (kde-applications kde-games) [instalado]
+    A game of hide and seek played on a grid of boxes
+extra/kblocks 23.08.0-1 (kde-applications kde-games) [instalado]
+    The classic falling blocks game
+extra/kbounce 23.08.0-1 (kde-applications kde-games) [instalado]
+    A single player arcade game with the elements of puzzle
+extra/kbreakout 23.08.0-1 (kde-applications kde-games) [instalado]
+    A Breakout-like game
+extra/kbruch 23.08.0-1 (kde-applications kde-education) [instalado]
+    Exercise Fractions
+extra/kcachegrind 23.08.0-1 (kde-applications kdesdk) [instalado]
+    Visualization of Performance Profiling Data
+extra/kcalc 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Scientific Calculator
+extra/kcharselect 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Character Selector
+extra/kclock 23.08.0-1 (kde-applications utilities) [instalado]
+    Clock app for Plasma Mobile
+extra/kcolorchooser 23.08.0-1 (kde-applications kde-graphics) [instalado]
+    Color Chooser
+extra/kcron 23.08.0-1 (kde-applications kde-system) [instalado]
+    Configure and schedule tasks
+extra/kde-applications-meta 23.08-1
+    Meta package for KDE Applications
+extra/kde-dev-scripts 23.08.0-1 (kde-applications kdesdk) [instalado]
+    Scripts and setting files useful during development of KDE software
+extra/kde-dev-utils 23.08.0-1 (kde-applications kdesdk) [instalado]
+    Small utilities for developers using KDE/Qt libs/frameworks
+extra/kde-inotify-survey 23.08.0-1 (kde-applications kde-system) [instalado]
+    Tooling for monitoring inotify limits and informing the user when they have been or about to be reached
+extra/kdebugsettings 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    An application to enable/disable qCDebug
+extra/kdeconnect 23.08.0-1 (kde-applications kde-network) [instalado]
+    Adds communication between KDE and your smartphone
+extra/kdegraphics-thumbnailers 23.08.0-1 (kde-applications kde-graphics) [instalado]
+    Thumbnailers for various graphics file formats
+extra/kdenetwork-filesharing 23.08.0-1 (kde-applications kde-network) [instalado]
+    Properties dialog plugin to share a directory with the local network
+extra/kdenlive 23.08.0-1 (kde-applications kde-multimedia) [instalado]
+    A non-linear video editor for Linux using the MLT video framework
+extra/kdepim-addons 23.08.0-2 (kde-applications kde-pim) [instalado]
+    Addons for KDE PIM applications
+extra/kdesdk-kio 23.08.0-1 (kde-applications kdesdk) [instalado]
+    KDE SDK KIO-Slaves
+extra/kdesdk-thumbnailers 23.08.0-1 (kde-applications kdesdk) [instalado]
+    Plugins for the thumbnailing system
+extra/kdevelop 23.08.0-2 (kde-applications kdevelop) [instalado]
+    C++ IDE using KDE technologies
+extra/kdevelop-php 23.08.0-1 (kde-applications kdevelop) [instalado]
+    PHP language and documentation plugin for KDevelop
+extra/kdevelop-python 23.08.0-1 (kde-applications kdevelop) [instalado]
+    Python language and documentation plugin for KDevelop
+extra/kdf 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    View Disk Usage
+extra/kdialog 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    A utility for displaying dialog boxes from shell scripts
+extra/kdiamond 23.08.0-1 (kde-applications kde-games) [instalado]
+    A single player puzzle game
+extra/keditbookmarks 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Bookmark Organizer and Editor
+extra/keysmith 23.08.0-2 (kde-applications kde-utilities) [instalado]
+    OTP client for Plasma Mobile and Desktop
+extra/kfind 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Find Files/Folders
+extra/kfourinline 23.08.0-1 (kde-applications kde-games) [instalado]
+    A four-in-a-row game
+extra/kgeography 23.08.0-1 (kde-applications kde-education) [instalado]
+    Geography Trainer
+extra/kget 23.08.0-1 (kde-applications kde-network) [instalado]
+    Download Manager
+extra/kgoldrunner 23.08.0-1 (kde-applications kde-games) [instalado]
+    A game of action and puzzle solving
+extra/kgpg 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    A GnuPG frontend
+extra/khangman 23.08.0-1 (kde-applications kde-education) [instalado]
+    Hangman Game
+extra/khelpcenter 23.08.0-1 (kde-applications kde-system) [instalado]
+    Application to show KDE Applications documentation
+extra/kig 23.08.0-2 (kde-applications kde-education) [instalado]
+    Interactive Geometry
+extra/kigo 23.08.0-1 (kde-applications kde-games) [instalado]
+    An open-source implementation of the popular Go game
+extra/killbots 23.08.0-1 (kde-applications kde-games) [instalado]
+    A simple game of evading killer robots
+extra/kimagemapeditor 23.08.0-1 (kde-applications kde-graphics) [instalado]
+    HTML Image Map Editor
+extra/kio-admin 23.08.0-1 (kde-applications kde-system) [instalado]
+    Manage files as administrator using the admin:// KIO protocol
+extra/kio-extras 23.08.0-2 (kde-applications kde-network) [instalado]
+    Additional components to increase the functionality of KIO
+extra/kio-gdrive 23.08.0-1 (kde-applications kde-network) [instalado]
+    KIO Slave to access Google Drive
+extra/kio-zeroconf 23.08.0-1 (kde-applications kde-network) [instalado]
+    Network Monitor for DNS-SD services (Zeroconf)
+extra/kirigami-gallery 23.08.0-1 (kde-applications kdesdk) [instalado]
+    Gallery application built using Kirigami
+extra/kiriki 23.08.0-1 (kde-applications kde-games) [instalado]
+    An addictive and fun dice game
+extra/kiten 23.08.0-1 (kde-applications kde-education) [instalado]
+    Japanese Reference/Study Tool
+extra/kjournald 23.08.0-1 (kde-applications kde-system) [instalado]
+    Framework for interacting with systemd-journald
+extra/kjumpingcube 23.08.0-1 (kde-applications kde-games) [instalado]
+    A simple tactical game
+extra/kleopatra 23.08.0-1 (kde-applications kde-pim) [instalado]
+    Certificate Manager and Unified Crypto GUI
+extra/klettres 23.08.0-1 (kde-applications kde-education) [instalado]
+    Learn The Alphabet
+extra/klickety 23.08.0-1 (kde-applications kde-games) [instalado]
+    An adaptation of the Clickomania game
+extra/klines 23.08.0-1 (kde-applications kde-games) [instalado]
+    A simple but highly addictive one player game
+extra/kmag 23.08.0-1 (kde-applications kde-accessibility) [instalado]
+    Screen Magnifier
+extra/kmahjongg 23.08.0-1 (kde-applications kde-games) [instalado]
+    A tile matching game for one or two players
+extra/kmail 23.08.0-1 (kde-applications kde-pim) [instalado]
+    KDE mail client
+extra/kmail-account-wizard 23.08.0-1 (kde-applications kde-pim) [instalado]
+    KMail account wizard
+extra/kmines 23.08.0-1 (kde-applications kde-games) [instalado]
+    The classic Minesweeper game
+extra/kmix 23.08.0-1 (kde-applications kde-multimedia) [instalado]
+    KDE volume control program
+extra/kmousetool 23.08.0-1 (kde-applications kde-accessibility) [instalado]
+    Clicks the mouse for you, reducing the effects of RSI
+extra/kmouth 23.08.0-1 (kde-applications kde-accessibility) [instalado]
+    Speech Synthesizer Frontend
+extra/kmplot 23.08.0-1 (kde-applications kde-education) [instalado]
+    Mathematical Function Plotter
+extra/knavalbattle 23.08.0-1 (kde-applications kde-games) [instalado]
+    A ship sinking game
+extra/knetwalk 23.08.0-1 (kde-applications kde-games) [instalado]
+    Connect all the terminals to the server, in as few turns as possible
+extra/knights 23.08.0-1 (kde-applications kde-games) [instalado]
+    Chess board by KDE with XBoard protocol support
+extra/knotes 23.08.0-1 (kde-applications kde-pim) [instalado]
+    Popup notes
+extra/koko 23.08.0-1 (kde-applications kde-graphics) [instalado]
+    Image gallery application
+extra/kolf 23.08.0-1 (kde-applications kde-games) [instalado]
+    A miniature golf game with 2d top-down view
+extra/kollision 23.08.0-1 (kde-applications kde-games) [instalado]
+    A simple ball dodging game
+extra/kolourpaint 23.08.0-1 (kde-applications kde-graphics) [instalado]
+    Paint Program
+extra/kompare 23.08.0-1 (kde-applications kdesdk) [instalado]
+    Graphical file differences tool
+extra/kongress 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Companion application for conferences
+extra/konqueror 23.08.0-1 (kde-applications kde-network) [instalado]
+    KDE File Manager & Web Browser
+extra/konquest 23.08.0-1 (kde-applications kde-games) [instalado]
+    The KDE version of Gnu-Lactic
+extra/konsole 23.08.0-2 (kde-applications kde-utilities) [instalado]
+    KDE terminal emulator
+extra/kontact 23.08.0-1 (kde-applications kde-pim) [instalado]
+    KDE Personal Information Manager
+extra/kontrast 23.08.0-1 (kde-applications kde-accessibility) [instalado]
+    Tool to check contrast for colors that allows verifying that your colors are correctly accessible
+extra/konversation 23.08.0-1 (kde-applications kde-network) [instalado]
+    A user-friendly and fully-featured IRC client
+extra/kopete 23.08.0-1 (kde-applications kde-network) [instalado]
+    Instant Messenger
+extra/korganizer 23.08.0-1 (kde-applications kde-pim) [instalado]
+    Calendar and scheduling Program
+extra/kpat 23.08.0-1 (kde-applications kde-games) [instalado]
+    Offers a selection of solitaire card games
+extra/krdc 23.08.0-1 (kde-applications kde-network) [instalado]
+    Remote Desktop Client
+extra/krecorder 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Audio recorder for Plasma Mobile and other platforms
+extra/kreversi 23.08.0-1 (kde-applications kde-games) [instalado]
+    A simple one player strategy game played against the computer
+extra/krfb 23.08.0-1 (kde-applications kde-network) [instalado]
+    Desktop Sharing
+extra/kruler 23.08.0-1 (kde-applications kde-graphics) [instalado]
+    Screen Ruler
+extra/kshisen 23.08.0-1 (kde-applications kde-games) [instalado]
+    A solitaire-like game played using the standard set of Mahjong tiles
+extra/ksirk 23.08.0-1 (kde-applications kde-games) [instalado]
+    A computerized version of a well known strategy game
+extra/ksnakeduel 23.08.0-1 (kde-applications kde-games) [instalado]
+    A simple snake duel game
+extra/kspaceduel 23.08.0-1 (kde-applications kde-games) [instalado]
+    Each of two possible players controls a satellite spaceship orbiting the sun
+extra/ksquares 23.08.0-1 (kde-applications kde-games) [instalado]
+    A game modeled after the well known pen and paper based game of Dots and Boxes
+extra/ksudoku 23.08.0-1 (kde-applications kde-games) [instalado]
+    A logic-based symbol placement puzzle
+extra/ksystemlog 23.08.0-1 (kde-applications kde-system) [instalado]
+    System log viewer tool
+extra/kteatime 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    A handy timer for steeping tea
+extra/ktimer 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Countdown Launcher
+extra/ktorrent 23.08.0-1 (kde-applications kde-network) [instalado]
+    A powerful BitTorrent client for KDE
+extra/ktouch 23.08.0-1 (kde-applications kde-education) [instalado]
+    Touch Typing Tutor
+extra/ktrip 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Public Transport Assistance for Mobile Devices
+extra/ktuberling 23.08.0-1 (kde-applications kde-games) [instalado]
+    A simple constructor game suitable for children and adults alike
+extra/kturtle 23.08.0-1 (kde-applications kde-education) [instalado]
+    Educational Programming Environment
+extra/kubrick 23.08.0-1 (kde-applications kde-games) [instalado]
+    Based on the famous Rubik's Cube
+extra/kwalletmanager 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Wallet management tool
+extra/kwave 23.08.0-1 (kde-applications kde-multimedia) [instalado]
+    A sound editor
+extra/kweather 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Weather application for Plasma Mobile
+extra/kwordquiz 23.08.0-1 (kde-applications kde-education) [instalado]
+    Flash Card Trainer
+extra/lokalize 23.08.0-1 (kde-applications kdesdk) [instalado]
+    Computer-Aided Translation System
+extra/lskat 23.08.0-1 (kde-applications kde-games) [instalado]
+    Lieutenant Skat is a fun and engaging card game for two players
+extra/marble 23.08.0-2 (kde-applications kde-education) [instalado]
+    Desktop Globe
+extra/markdownpart 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    KPart for rendering Markdown content
+extra/mbox-importer 23.08.0-1 (kde-applications kde-pim) [instalado]
+    Import mbox files to KMail
+extra/merkuro 23.08.0-2 (kde-applications kde-pim) [instalado]
+    A calendar application using Akonadi to sync with external services
+extra/minuet 23.08.0-1 (kde-applications kde-education) [instalado]
+    A KDE Software for Music Education
+extra/neochat 23.08.0-4 (kde-applications kde-network) [instalado]
+    A client for matrix, the decentralized communication protocol
+extra/okular 23.08.0-2 (kde-applications kde-graphics) [instalado]
+    Document Viewer
+extra/palapeli 23.08.0-1 (kde-applications kde-games) [instalado]
+    A single-player jigsaw puzzle game
+extra/parley 23.08.0-1 (kde-applications kde-education) [instalado]
+    Vocabulary Trainer
+extra/partitionmanager 23.08.0-1 (kde-applications kde-system) [instalado]
+    A KDE utility that allows you to manage disks, partitions, and file systems
+extra/picmi 23.08.0-1 (kde-applications kde-games) [instalado]
+    A nonogram logic game for KDE
+extra/pim-data-exporter 23.08.0-1 (kde-applications kde-pim) [instalado]
+    Import and export KDE PIM settings
+extra/pim-sieve-editor 23.08.0-1 (kde-applications kde-pim) [instalado]
+    Mail sieve editor
+extra/plasmatube 23.08.0-1 (kde-applications kde-multimedia) [instalado]
+    Kirigami YouTube video player based on QtMultimedia and youtube-dl
+extra/poxml 23.08.0-1 (kde-applications kdesdk) [instalado]
+    Translates DocBook XML files using gettext po files
+extra/print-manager 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    A tool for managing print jobs and printers
+extra/rocs 23.08.0-1 (kde-applications kde-education) [instalado]
+    Graph Theory IDE
+extra/signon-kwallet-extension 23.08.0-1 (kde-applications kde-network) [instalado]
+    KWallet integration for signon framework
+extra/skanlite 23.08.0-1 (kde-applications kde-graphics) [instalado]
+    Image Scanning Application
+extra/skanpage 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Utility to scan images and multi-page documents
+extra/spectacle 23.08.0-1 (kde-applications kde-graphics) [instalado]
+    KDE screenshot capture utility
+extra/step 23.08.0-1 (kde-applications kde-education) [instalado]
+    Interactive Physical Simulator
+extra/svgpart 23.08.0-1 (kde-applications kde-graphics) [instalado]
+    A KPart for viewing SVGs
+extra/sweeper 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    System Cleaner
+extra/telly-skout 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    Convergent TV guide based on Kirigami
+extra/tokodon 23.08.0-1 (kde-applications kde-network) [instalado]
+    A Mastodon client for Plasma
+extra/umbrello 23.08.0-1 (kde-applications kdesdk) [instalado]
+    UML modeller
+extra/yakuake 23.08.0-1 (kde-applications kde-utilities) [instalado]
+    A drop-down terminal emulator based on KDE konsole technology
+extra/zanshin 23.08.0-1 (kde-applications kde-pim) [instalado]
+    To-do management application based on Akonadi
