@@ -174,10 +174,16 @@ bar {
     position top
     mode hide
     #status_command i3status 
-    colors {
-      background #0f111a
-    }
     
+    colors {
+      separator #444444
+      background #0f111a
+      statusline #B1B1B1
+      focused_workspace #70e07b  #70e07b #0f111a
+      active_workspace #55007f #55007f #888888
+      inactive_workspace #888888 #888888 #55007f
+      urgent_workspace #eb709b #eb709b #ffffff
+   }
     font xft:BigBlueTermPlus Nerd Font Mono 15
 }
 
@@ -223,8 +229,8 @@ bindsym $mod+Shift+Return exec google-chrome-stable
 bindsym $mod+Shift+p exec spectacle
 
 # Autostart 
-exec --no-startup-id  picom -bc
-exec --no-startup-id sleep 5 && nitrogen --restore
+exec --no-startup-id sleep 5 && nitrogen --restore 
+exec --no-startup-id sleep 6 && picom -b
 exec --no-startup-id yakuake
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 1
@@ -235,9 +241,9 @@ hide_edge_borders none
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #556064 #556064 #80FFF9 #FDF6E3
-  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
+  client.focused          #9806b5 #556064 #80FFF9 #70e07b #ef4394
+  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #438648 #9806b5
+  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948 #1e7ddd
   client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
   client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
@@ -261,7 +267,7 @@ smart_gaps off
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-smart_borders on
+smart_borders no_gaps
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -299,4 +305,5 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
 
