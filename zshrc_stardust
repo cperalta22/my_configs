@@ -114,3 +114,15 @@ alias fullgit="/home/cpa/my_configs/git_pull_add_commit_push.sh"
 alias dnsfix="sudo /opt/tailscale_dns_fix.sh"
 alias v3="nvim .config/i3/config"
 
+# Ranger config para cd al salir 
+#
+ranger_cd() {
+    temp_file="$(mktemp -t "ranger_cd.XXXXXXXXXX")"
+    ranger --choosedir="$temp_file" -- "${@:-$PWD}"
+    if chosen_dir="$(cat -- "$temp_file")" && [ -n "$chosen_dir" ] && [ "$chosen_dir" != "$PWD" ]; then
+        cd -- "$chosen_dir"
+    fi
+    rm -f -- "$temp_file"
+}
+
+alias ranger="ranger_cd"
