@@ -45,7 +45,7 @@ Help()
 
 
 
-WBROW='x-www-browser'
+WBROW='google-chrome-stable'
 SITE='https://www.google.com/search?q='
 
 while getopts CQFLhnksyd flag
@@ -53,7 +53,7 @@ do
     case $flag in
         h) Help
            exit;;
-        C) WBROW=google-chrome;;
+        C) WBROW=google-chrome-stable;;
 	      O) WBROW="flatpak run com.google.Chrome";;
         Q) WBROW=qutebrowser;;
         F) WBROW=firefox;;
