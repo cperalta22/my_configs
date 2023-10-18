@@ -113,6 +113,11 @@ alias sz="source /home/cpa/.zshrc"
 alias fullgit="/home/cpa/my_configs/git_pull_add_commit_push.sh"
 alias dnsfix="sudo /opt/tailscale_dns_fix.sh"
 alias v3="nvim .config/i3/config"
+alias gg="/home/cpa/my_configs/clisearch_arch.sh"
+alias ll="/home/cpa/my_configs/clisearch_arch.sh -L"
+alias yy="/home/cpa/my_configs/clisearch_arch.sh -y"
+
+
 
 # Ranger config para cd al salir 
 #
@@ -126,3 +131,5 @@ ranger_cd() {
 }
 
 alias ranger="ranger_cd"
+
+
