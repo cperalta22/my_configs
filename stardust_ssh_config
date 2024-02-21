@@ -1,0 +1,45 @@
+ServerAliveInterval 30
+Host ifc
+    HostName 132.248.16.17
+    User cperalta
+    Port 6112
+
+Host crispin
+     Hostname 192.168.0.67 
+     User crispin
+     Port 2077
+
+Host tcrispin
+     Hostname 100.101.160.95
+     User crispin
+     Port 2077
+
+Host ultron
+     Hostname 10.10.180.37
+     User cperalta
+     ProxyJump ifc
+
+Host neptor
+     Hostname 100.107.242.138
+     User cpa
+
+Host lneptor
+     Hostname 192.168.1.144
+     User cpa
+
+Host stardust
+     Hostname 192.168.1.192
+     User cpa
+
+Host cocaleca
+     Hostname 192.168.1.223
+     User cpa
+
+Host tcocaleca
+     Hostname 100.65.230.105
+     User cpa
+
+Host gambito
+     Hostname 100.117.139.143
+     User cpa
+     Port 1896
