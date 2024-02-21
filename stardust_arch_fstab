@@ -1,0 +1,19 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/nvme0n1p2
+UUID=cd4e5a2d-4720-45c7-83c3-07191822cbfc	/         	ext4      	rw,relatime	0 1
+
+# /dev/nvme0n1p3
+UUID=25aa1dbb-5533-49c4-9ea6-883f48bcf709	/home     	ext4      	rw,relatime	0 2
+
+# /dev/nvme0n1p1
+UUID=7b13d454-d9a8-414a-b45e-b541afcb2548	none      	swap      	defaults  	0 0
+
+# /dev/sda1
+UUID=e5f81800-6db6-40bf-bec7-fbf8b3dcfcb9 /HDD        ext4        rw,relatime,acl  0 0
+
+# /dev/sdb1
+UUID=461bc487-8545-4204-9792-1a75238f5620 /SSD        ext4        rw,relatime  0 0
+
