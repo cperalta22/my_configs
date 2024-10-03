@@ -34,30 +34,53 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+space exec --no-startup-id "rofi -show combi -modes combi -combi-modes 'window,drun,run' -theme gruvbox-dark-hard"
-################################################################################################
-## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
-################################################################################################
+#bindsym $mod+space exec --no-startup-id "rofi -show combi -modes combi -combi-modes 'window,drun,run' -theme gruvbox-dark-hard"
+bindsym $mod+space exec --no-startup-id rofi -modi drun -show drun \
+		-config ~/.config/rofi/rofidmenu.rasi
 
-#exec --no-startup-id volumeicon
-#bindsym $mod+Ctrl+m exec alacritty -e 'alsamixer'
-exec --no-startup-id pulseaudio
-exec --no-startup-id pasystray
-bindsym $mod+Ctrl+m exec pavucontrol
+# Multimedia Keys
 
-################################################################################################
+# volume
+# use meta keys without showing osc
+#bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
+#bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
+# use meta keys showing osc using dunst
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_up
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_down
 
-# Screen brightness controls
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+# gradular volume control
+bindsym $mod+XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 1%+ && pkill -RTMIN+1 i3blocks
+bindsym $mod+XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 1%- && pkill -RTMIN+1 i3blocks
+
+# mute
+#bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle && killall -USR1 i3blocks
+# use meta keys showing osc using dunst
+bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_mute
+
+# mic mute toggle
+bindsym XF86AudioMicMute exec amixer sset Capture toggle
+
+# audio control
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause 
+# Above line will also work for pausing
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+
+# Redirect sound to headphones
+#bindsym $mod+p exec --no-startup-id /usr/local/bin/switch-audio-port
+
+# Power Profiles menu switcher (rofi)
+bindsym $mod+Shift+y exec --no-startup-id ~/.config/i3/scripts/power-profiles
+
+
 
 # Start Applications
-bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
+#bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
 bindsym $mod+Shift+Return exec google-chrome-stable --profile-directory=Default
 bindsym $mod+$alt+Return exec google-chrome-stable --profile-directory=Profile\ 1
 bindsym Control+Shift+Return exec google-chrome-stable  --proxy-server="socks5://localhost:4000"
-bindsym $mod+p exec pcmanfm
-bindsym $mod+$alt+p exec alacritty -e 'ranger'
+bindsym $mod+p exec thunar
+#bindsym $mod+$alt+p exec alacritty -e 'ranger'
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Shift+p exec --no-startup-id "/usr/bin/flameshot gui"
@@ -139,7 +162,7 @@ set $ws2 "2:"
 set $ws3 "3:"
 set $ws4 "4:" 
 set $ws5 "5:"
-set $ws6 "6:🎲"
+set $ws6 "6:"
 set $ws7 "7:"
 set $ws8 "8:"
 set $ws9 "9:"
