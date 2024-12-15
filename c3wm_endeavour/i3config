@@ -22,7 +22,7 @@ bindsym $mod+$alt+m border pixel 2
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: Mononoki Nerd Font 13
+font pango: Mononoki Nerd Font Bold 13
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -76,9 +76,9 @@ bindsym $mod+Shift+y exec --no-startup-id ~/.config/i3/scripts/power-profiles
 
 # Start Applications
 #bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
-bindsym $mod+Shift+Return exec google-chrome-stable --profile-directory=Default
-bindsym $mod+$alt+Return exec google-chrome-stable --profile-directory=Profile\ 1
-bindsym Control+Shift+Return exec google-chrome-stable  --proxy-server="socks5://localhost:4000"
+bindsym $mod+Shift+Return exec vivaldi --profile-directory=Default
+#bindsym $mod+$alt+Return exec vivaldi --profile-directory=Profile\ 1
+bindsym Control+Shift+Return exec vivaldi  --proxy-server="socks5://localhost:4000"
 bindsym $mod+p exec thunar
 #bindsym $mod+$alt+p exec alacritty -e 'ranger'
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -156,17 +156,16 @@ bindsym $mod+Ctrl+Left workspace prev
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-
-set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:"
-set $ws4 "4:" 
-set $ws5 "5:"
-set $ws6 "6:"
-set $ws7 "7:"
-set $ws8 "8:"
-set $ws9 "9:"
-set $ws10 "10: " 
+set $ws1 "1:1"
+set $ws2 "2:2"
+set $ws3 "3:3"
+set $ws4 "4:4" 
+set $ws5 "5:5"
+set $ws6 "6:6"
+set $ws7 "7:7"
+set $ws8 "8:8"
+set $ws9 "9:9"
+set $ws10 "10:10" 
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -278,10 +277,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym semicolon resize grow width 5 px or 5 ppt
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -303,8 +302,8 @@ exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
-#exec --no-startup-id pamac-tray
-exec --no-startup-id parcellite
+exec --no-startup-id pasystray
+exec --no-startup-id copyq
 exec --no-startup-id blueberry-tray
 exec --no-startup-id tailscale-systray
 exec --no-startup-id killall blueman-applet
@@ -312,9 +311,10 @@ exec --no-startup-id killall blueman-applet
 # exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
-exec --no-startup-id xmodmap -e 'pointer = 3 2 1'
-exec --no-startup-id /home/cpa/.screenlayout/2monvert.sh
-exec --no-startup-id openrgb --startminimized -p allwhite
+#exec --no-startup-id xmodmap -e 'pointer = 3 2 1'
+exec --no-startup-id /home/cpa/.screenlayout/3monvert.sh
+#exec --no-startup-id openrgb --startminimized -p allwhite
+exec --no-startup-id openrgb --startminimized -p green
 exec --no-startup-id easyeffects --gapplication-service
 #exec_always --no-startup-id ff-theme-util
 #exec_always --no-startup-id fix_xcursor
@@ -363,7 +363,8 @@ bar {
 
 	bindsym button4 nop
 	bindsym button5 nop
-  font xft:URWGothic-Book 14
+  #font xft:URWGothic-Book 14
+  font pango:Mononoki Nerd Font Bold 15
 	strip_workspace_numbers yes
 
 #    colors {
@@ -379,12 +380,12 @@ bar {
 #        urgent_workspace   #16a085 #FDF6E3 #E5201D
 #    }
     colors {
-      separator #444444
+      separator #80FFF9
       background #0f111a
-      statusline #B1B1B1
-      focused_workspace #70e07b  #70e07b #0f111a
-      active_workspace #55007f #55007f #888888
-      inactive_workspace #888888 #888888 #55007f
+      statusline #ef4394
+      focused_workspace #ef4394 #0f111a #80FFF9
+      active_workspace #9c2c64  #0f111a #478d89
+      inactive_workspace #0f111a #0f111a #478d89
       urgent_workspace #eb709b #eb709b #ffffff
 }
 }
@@ -394,21 +395,10 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-#  client.focused          #556064 #556064 #80FFF9 #FDF6E3
-#  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-#  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
-#  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-#  client.placeholder      #000000 #0c0c0c #ffffff #000000 
-
-#  client.background       #2B2C2B
-
-
-# Theme colors
-# class                   border  backgr. text    indic.   child_border
-  client.focused          #9806b5 #556064 #80FFF9 #70e07b #ef4394
-  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #438648 #9806b5
-  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948 #1e7ddd
-  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+  client.focused          #ef4394 #0f111a #80FFF9 #1ABC9C #ef4394 #9806b5
+  client.focused_inactive #9c2c64 #0f111a #478d89 #70e07b #9c2c64
+  client.unfocused        #0f111a #0f111a #478d89 #454948 #0f111a
+  client.urgent           #eb709b #eb709b #ffffff #1e7ddd
   client.placeholder      #000000 #0c0c0c #ffffff #000000
 
   client.background       #2B2C2B
