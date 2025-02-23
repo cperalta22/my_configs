@@ -1,5 +1,14 @@
-# i3 config file (v4)
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+# Config for i3wm 
+# based on endeavouros i3 default config. 
+# modified by Carlos Peralta
+
+# Config starts now
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+# This font is widely installed, provides lots of unicode glyphs, right-to-left
+# text rendering and scalability on retina/hidpi displays (thanks to pango).
+font pango: Mononoki Nerd Font Bold 13
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
@@ -7,6 +16,7 @@ set $alt Mod1
 
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
+
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 2
@@ -38,6 +48,10 @@ bindsym $mod+Shift+q kill
 bindsym $mod+space exec --no-startup-id rofi -modi drun -show drun \
 		-config ~/.config/rofi/rofidmenu.rasi
 
+# switch/iterate between workspaces
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
 # Multimedia Keys
 
 # volume
@@ -66,37 +80,43 @@ bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
+# Backlight control
+#bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
+#bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
+# Backlight setting using dunst osc
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_up
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_down
+
 # Redirect sound to headphones
-#bindsym $mod+p exec --no-startup-id /usr/local/bin/switch-audio-port
+bindsym $mod+Shift+F10 exec --no-startup-id /usr/local/bin/switch-audio-port
 
-# Power Profiles menu switcher (rofi)
-bindsym $mod+Shift+y exec --no-startup-id ~/.config/i3/scripts/power-profiles
-
-
-
-# Start Applications
-#bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
-bindsym $mod+Shift+Return exec vivaldi --profile-directory=Default
-#bindsym $mod+$alt+Return exec vivaldi --profile-directory=Profile\ 1
-bindsym Control+Shift+Return exec vivaldi  --proxy-server="socks5://localhost:4000"
-bindsym $mod+p exec thunar
-#bindsym $mod+$alt+p exec alacritty -e 'ranger'
+## App shortcuts
+bindsym $mod+Shift+Return exec --no-startup-id /usr/bin/firefox
+bindsym $mod+p exec --no-startup-id /usr/bin/thunar
+bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Shift+p exec --no-startup-id "/usr/bin/flameshot gui"
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 focus_follows_mouse yes
 
-# change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+# Power Profiles menu switcher (rofi)
+bindsym $mod+Shift+y exec --no-startup-id ~/.config/i3/scripts/power-profiles
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
+# Lock the system
+# lock with a picture:
+#bindsym $mod+Shift+l exec --no-startup-id i3lock -i  ~/.config/i3/i3-lock-screen.png -p default|win -t
+# lock by blurring the screen:
+bindsym $mod+Shift+F3 exec --no-startup-id ~/.config/i3/scripts/blur-lock
+# lock in case after sleep
+exec --no-startup-id xss-lock -l ~/.config/i3/scripts/blur-lock
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to update i3)
+bindsym $mod+Shift+r restart
+
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
@@ -148,9 +168,16 @@ bindsym $mod+Shift+minus move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+minus scratchpad show
 
-#navigate workspaces next / previous
-bindsym $mod+Ctrl+Right workspace next
-bindsym $mod+Ctrl+Left workspace prev
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+
 
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
@@ -243,31 +270,8 @@ for_window [class="Xfburn"] floating enable
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
-
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
-# Set shut down, restart and locking features
-bindsym $mod+F4 mode "$mode_system"
-set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
-mode "$mode_system" {
-    bindsym l exec --no-startup-id i3exit lock, mode "default"
-    bindsym s exec --no-startup-id i3exit suspend, mode "default"
-    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
-    bindsym e exec --no-startup-id i3exit logout, mode "default"
-    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
-
-    # exit system mode: "Enter" or "Escape"
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
 
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
@@ -293,8 +297,6 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-# Lock screen
-bindsym $mod+F3 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -308,8 +310,8 @@ exec --no-startup-id tailscale-systray
 exec --no-startup-id killall blueman-applet
 exec --no-startup-id xautolock -time 10 -locker blurlock
 #exec --no-startup-id xmodmap -e 'pointer = 3 2 1'
-#exec --no-startup-id /home/$USER/.screenlayout/3monvert.sh
-#exec --no-startup-id openrgb --startminimized -p green
+##exec --no-startup-id /home/$USER/.screenlayout/3monvert.sh
+##exec --no-startup-id openrgb --startminimized -p green
 exec --no-startup-id easyeffects --gapplication-service
 
 # Color palette used for the terminal ( ~/.Xresources file )
@@ -343,22 +345,58 @@ set_from_resource $term_color13    color13
 set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
-# Start i3bar to display a workspace bar (plus the system information i3status if available)
-bar {
-	i3bar_command i3bar
-	status_command i3status
-	position top
-	#mode hide
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
 #	tray_output eDP1
 
-	bindsym button4 nop
-	bindsym button5 nop
+# hide/unhide i3status bar
+bindsym $mod+m bar mode toggle
+
+# Theme colors
+# class                   border  backgr. text    indic.   child_border
+  client.focused          #ef4394 #0f111a #80FFF9 #1ABC9C #ef4394 #9806b5
+  client.focused_inactive #9c2c64 #0f111a #478d89 #70e07b #9c2c64
+  client.unfocused        #0f111a #0f111a #478d89 #454948 #0f111a
+  client.urgent           #eb709b #eb709b #ffffff #1e7ddd
+  client.placeholder      #000000 #0c0c0c #ffffff #000000
+
+  client.background       #2B2C2B
+
+# use workspaces on different displays:
+# where you have to replace VGA-0/HDMI-0 with the names for your displays
+# you can get from xrandr command
+#workspace $ws1 output VGA-0
+#workspace $ws2 output VGA-0
+#workspace $ws3 output HDMI-0
+#workspace $ws4 output HDMI-0
+#workspace $ws5 output HDMI-0
+
+############################################
+# bar settings (input comes from i3blocks) #
+############################################
+
+# Start i3bar to display a workspace bar
+# (plus the system information i3status finds out, if available)
+bar {
+		font pango: Noto Sans Regular 10
+		status_command i3blocks -c ~/.config/i3/i3blocks.conf
+	    	position top
+#	    	i3bar_command i3bar --transparency
+# it could be that you have no primary display set: set one (xrandr --output <output> --primary)
+# reference: https://i3wm.org/docs/userguide.html#_tray_output
+		    #tray_output primary
+		    tray_padding 0
+
+# please set your primary output first. Example: 'xrandr --output eDP1 --primary'
+#       tray_output primary
+#       tray_output eDP1
+
+        bindsym button4 nop
+        bindsym button5 nop
   #font xft:URWGothic-Book 14
   font pango:Mononoki Nerd Font Bold 15
-	strip_workspace_numbers yes
+        strip_workspace_numbers yes
 
 #    colors {
 #        background #222D31
@@ -383,18 +421,7 @@ bar {
 }
 }
 
-# hide/unhide i3status bar
-bindsym $mod+m bar mode toggle
 
-# Theme colors
-# class                   border  backgr. text    indic.   child_border
-  client.focused          #ef4394 #0f111a #80FFF9 #1ABC9C #ef4394 #9806b5
-  client.focused_inactive #9c2c64 #0f111a #478d89 #70e07b #9c2c64
-  client.unfocused        #0f111a #0f111a #478d89 #454948 #0f111a
-  client.urgent           #eb709b #eb709b #ffffff #1e7ddd
-  client.placeholder      #000000 #0c0c0c #ffffff #000000
-
-  client.background       #2B2C2B
 
 #############################
 ### settings for i3-gaps: ###
