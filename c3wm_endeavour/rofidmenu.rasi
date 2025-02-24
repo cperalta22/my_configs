@@ -3,7 +3,7 @@
  * Maintainer: joekamprad [joekamprad //a_t// endeavouros.com]
  *******************************************************/
 configuration {
-    font:                "Mononoki Nerd Font 14";
+    font:                "Mononoki Nerd Font 18";
     show-icons:          true;
     icon-theme:          "Candy";
     display-drun:        "Apps";
