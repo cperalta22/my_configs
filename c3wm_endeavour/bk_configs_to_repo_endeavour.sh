@@ -8,3 +8,4 @@ sed -i '/openrgb/s/^/#/' ./i3config
 cp /etc/i3status.conf ./i3status.conf
 cp /home/$USER/.config/rofi/rofidmenu.rasi ./rofidmenu.rasi
 cp /home/$USER/.config/rofi/config.rasi ./config.rasi
+cp /home/$USER/.config/ranger/rc.conf ./rc.conf
