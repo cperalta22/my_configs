@@ -7,4 +7,20 @@ yay -S \
   xf86-input-wacom \
   syncthing \
   lib32-mesa vulkan-radeon \
-  upscayl-bin
+  upscayl-bin \
+  ttf-ms-win11-auto \
+  ttf-vista-fonts \
+  open-webui \
+  radeontop \
+  rocminfo \
+  rocm-smi-lib \
+  steam-devices-git \
+  libreoffice-fresh \
+  libreoffice-fresh-es \
+  densify
+
+flatpak install \
+  com.obsproject.Studio
+com.obsproject.Studio.Plugin.BackgroundRemoval
+com.valvesoftware.Steam
+org.freefilesync.FreeFileSync

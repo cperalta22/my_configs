@@ -48,4 +48,5 @@ yay -S \
   tailscale-systray-git \
   brightnessctl \
   gimp \
-  ueberzugpp
+  ueberzugpp \
+  gnome-disk-utility
