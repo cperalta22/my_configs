@@ -17,10 +17,12 @@ yay -S \
   steam-devices-git \
   libreoffice-fresh \
   libreoffice-fresh-es \
-  densify
+  densify \
+  speech-dispatcher \
+  lutris
 
 flatpak install \
-  com.obsproject.Studio
-com.obsproject.Studio.Plugin.BackgroundRemoval
-com.valvesoftware.Steam
-org.freefilesync.FreeFileSync
+  com.obsproject.Studio \
+  com.obsproject.Studio.Plugin.BackgroundRemoval \
+  com.valvesoftware.Steam \
+  org.freefilesync.FreeFileSync
