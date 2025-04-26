@@ -19,7 +19,9 @@ yay -S \
   libreoffice-fresh-es \
   densify \
   speech-dispatcher \
-  lutris
+  lutris \
+  igv \
+  proxy-ns
 
 flatpak install \
   com.obsproject.Studio \
