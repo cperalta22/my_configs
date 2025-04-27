@@ -94,7 +94,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl -q set 5%-
 bindsym $mod+Shift+F10 exec --no-startup-id /usr/local/bin/switch-audio-port
 
 ## App shortcuts
-bindsym $mod+Shift+Return exec --no-startup-id /usr/bin/firefox
+bindsym $mod+Shift+Return exec --no-startup-id /usr/bin/floorp
 bindsym $mod+p exec --no-startup-id /usr/bin/thunar
 bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -369,9 +369,9 @@ bindsym $mod+m bar mode toggle
 # use workspaces on different displays:
 # where you have to replace VGA-0/HDMI-0 with the names for your displays
 # you can get from xrandr command
-#workspace $ws1 output VGA-0
-#workspace $ws2 output VGA-0
-#workspace $ws3 output HDMI-0
+workspace $ws1 output HDMI-A-0
+workspace $ws2 output DisplayPort-1
+workspace $ws3 output DisplayPort-2
 #workspace $ws4 output HDMI-0
 #workspace $ws5 output HDMI-0
 
@@ -398,7 +398,7 @@ bar {
         bindsym button4 nop
         bindsym button5 nop
   #font xft:URWGothic-Book 14
-  font pango:Mononoki Nerd Font Bold 15
+  font pango:Mononoki Nerd Font Bold 11
         strip_workspace_numbers yes
 
 #    colors {
