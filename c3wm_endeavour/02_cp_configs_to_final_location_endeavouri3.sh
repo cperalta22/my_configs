@@ -9,3 +9,5 @@ cp ./config.rasi /home/$USER/.config/rofi/config.rasi
 [ -f /home/$USER/.config/i3/i3blocks.conf ] && mv /home/$USER/.config/i3/i3blocks.conf /home/$USER/.config/i3/i3blocks.conf.original && cp ./i3blocks.conf /home/$USER/.config/i3/i3blocks.conf || echo "copia i3status falló"
 [ ! -d /home/$USER/.config/ranger ] && mkdir -p /home/$USER/.config/ranger
 cp ./rc.conf /home/$USER/.config/rc.conf
+cp ./Xresources /home/$USER/.Xresources
+cp -r ./gtk-?.0 ./tmp
