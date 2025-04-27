@@ -21,7 +21,9 @@ yay -S \
   speech-dispatcher \
   lutris \
   igv \
-  proxy-ns
+  proxy-ns \
+  bibata-extra-cursor-theme \
+  bibata-cursor-theme
 
 flatpak install \
   com.obsproject.Studio \
