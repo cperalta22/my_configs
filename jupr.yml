@@ -9,6 +9,7 @@ dependencies:
   - bioconductor-ebimage
   - jupyter-lsp
   - jupyterlab
+  - pip
   - r-car
   - r-codetools
   - r-irkernel
