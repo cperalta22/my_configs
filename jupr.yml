@@ -1,0 +1,17 @@
+name: jupr
+channels:
+  - bioconda
+  - r
+  - conda-forge
+dependencies:
+  - bedtools
+  - bioconductor-deseq2
+  - bioconductor-ebimage
+  - jupyter-lsp
+  - jupyterlab
+  - r-car
+  - r-codetools
+  - r-irkernel
+  - r-tidyverse
+  - pip:
+      - jldracula
