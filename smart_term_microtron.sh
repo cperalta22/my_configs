@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Reemplaza 'eDP-1' con el nombre de tu monitor pequeño
-SMALL_MONITOR_NAME="DP-5"
+SMALL_MONITOR_NAME="HDMI-A-0"
 
 # Obtenemos el nombre del monitor que tiene el foco actual usando i3-msg y jq
 FOCUSED_MONITOR=$(i3-msg -t get_workspaces | jq -r '.[] | select(.focused==true).output')
